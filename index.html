@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  <style>
+    /* Estilos para a caixa de mensagem */
+    .message-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+    .message-content {
+      text-align: center;
+    }
+  </style>
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Hemofilia</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text" style="text-align: center;">Conheça a Hemofilia</p>
+      </div>
+    </div>
+
+    <br><br>
+    <nav class="navbar">
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link has-after">Conceito</a>
+        </li>
+
+        <li>
+          <a href="#fisiopatologia" class="navbar-link has-after">Fisiopatologia</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link has-after">Sintomas</a>
+        </li>
+
+        <li>
+          <a href="#offer" class="navbar-link has-after">Diagnóstico</a>
+        </li>
+
+        <li>
+          <a href="#tratamento" class="navbar-link has-after">Tratamento</a>
+        </li>
+        <li>
+          <a href="#hemophiliaChart" class="navbar-link has-after">Epidemiologia</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+
+        <li>
+          <a href="#offer" class="navbar-link" data-nav-link>Offer</a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image"
+                style="background-image: url('https://www.infoescola.com/wp-content/uploads/2008/06/eritrograma-516541060.jpg')">
+
+                <div class="card-content" >
+                 
+                  <h1 class="h1 hero-title" id="text1">
+                  O que é a Hemofilia?
+                  </h1>
+
+                  <p class="hero-text">
+                    A coagulação do sangue envolve a interação de proteínas conhecidas como fatores da coagulação, além da participação essencial de íons e células, como as plaquetas. Aliás, é crucial citar a participação da proteína fibrina, pois é ela que desempenha um papel crucial na estabilização do coágulo.
+
+                    São as deficiências nos fatores da coagulação que podem levar a doenças hemorrágicas, denominadas de coagulopatias e uma delas é a <b>Hemofilia</b>. A hemofilia é um distúrbio de caráter que está estritamente ligado ao do sangue, pois prejudica a coagulação sanguínea, resultando principalmente sangramentos, que por sua vez podem ser prolongados ou anormais.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./1im.png')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+              <Br></Br>      <br>
+                  </h1>
+
+                  <p class="hero-text">
+                    <br><br><br><br><br><br>
+                  </p>
+                  <br><br>
+                  <br>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('Design\ sem\ nome.jpg')">
+
+                <div class="card-content2">
+
+                  <div class="card-content2">
+                    
+                      <h1 class="h1 hero-title" style="color: black;">Gravidade da Hemofilia</h1>
+                      <p class="hero-text" style="color: black; font-weight: 700;"><br>
+                        A gravidade da hemofilia varia de pessoa para pessoa, dependendo da quantidade do fator de coagulação ausente ou deficiente e de outros fatores individuais. Algumas pessoas podem experimentar apenas sangramentos leves, enquanto outras enfrentam sangramentos graves e frequentes que podem representar riscos para a saúde e a qualidade de vida. <br><br>
+                         
+                      </p>
+                  </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+          <h1 class="collection-title" style="font-size: 2em; color: darkred;">
+            Coagulação sanguínea
+          </h1>
+            <p style="font-size: 20px;">
+              <BR>A coagulação acontece por meio de lesões nos vasos sanguíneos que rompem o endotélio e promove o extravasamento a matriz existente no sangue que, em contato com substâncias associadas na matriz subendotelial, ligam-se às plaquetas, que possuem uma forma similar a um disco, formando um aglomerado de plaquetas. Essas plaquetas se fixam ao tecido. Além disso, a coagulação sanguínea que envolve a formação do trombo e a líse das estruturas das proteínas fibrina, após o processo de cicatrização, elas são essenciais para interromper o sangramento. Basicamente a hemostasia ocorre em 3 etapas, a primeira, é <b>Hemostasia Primária</B> que envolve a contração vascular no local para que assim acontteça a diminuição do fluxo sanguíneo na região. Em seguida acontece a criação de um tampão plaquetário, tendo atuação na região das plaquetas e do fibrinogênio e a fibrinólise, que é a ação que promove a remoção dos coágulos, quando o vaso retorna ao seu habitual.<br><br></p>
+        <h1 class="collection-title" style="font-size: 2em; color: darkred;" id="fisiopatologia"> Fisiopatologia</h1><p style="font-size: 20px;">
+          <BR >
+            Existem dois tipos de Hemofilia, o tipo <b>A</b> e o tipo <b>B</b>, o tipo <b>A</b> é caracterizada por ser de caráter hereditário por alelo recessivo e associado ao cromossomos sexual <b>X</b>, manifestando-se principalmente nos homens, acometida pelo falta de atividade no fator de coagulação VIII, em geral, ela é  uma doença congênita, mas pode ser adquirida ao longo da vida. Já a hemofilia do tipo B está associada a uma anomalia no fator IX (nove). Esse patologia permite a produção de anticorpos contra os fatores de coagulação, especialmente contra o fator VIII, são os chamados inibidores de coagulação. <br><br>
+            <div style="display: flex; align-items: center;  flex-direction: column;">
+              <img src="https://i0.wp.com/d3043uog1ad1l6.cloudfront.net/uploads/2021/04/Imagem1-8.png?resize=471%2C314&ssl=1" alt="Esquema de hereditariedade da hemofilia" >
+              <div style="width:750px; font-size:12px;  ">
+                <p style="text-align: center;"><strong>Figura:</strong> Representação esquemática acerca da hereditariedade da hemofilia. Retirada de: repositorio.uniceub.br</p>
+              </div>
+            </div>
+          <p style="font-size: 20px;">
+            <BR>A gravidade da hemorragia na hemofilia é principalmente determinada por fatores genéticos que influenciam a atividade de coagulação dos fatores VIII ou IX no sangue:<br>
+          <br><b>Hemofilia leve:</b> A atividade de coagulação varia entre 5% e 49% do normal. Os portadores de hemofilia leve podem não ser diagnosticados, mas atenção: eles podem apresentar sangramentos excessivos após cirurgias, procedimentos dentários ou lesões.<br>
+          <br><b>Hemofilia moderada:</b> A coagulação está entre 1% e 5% do normal. Esses indivíduos com hemofilia moderada muito raramente passam por hemorragias espontâneas, entretanto, podem sofrer sangramentos graves após cirurgias ou lesões. Além disso, o seu primeiro episódio hemorrágico pode acontecer antes dos 18 meses de idade.<br>
+          <br><b>Hemofilia grave:</b> A atividade de coagulação é bem prejudicada, com cerca de 1% do normal. Essas pessoas sofrem de hemorragias que geralmente são graves e recorrentes, podendo ser até mesmo espontâneas, sem lesões aparentes. O primeiro episódio hemorrágico pode ocorrer durante ou logo após o parto. Ademais, essas hemorragias podem ocorrer de formas repetidas nas articulações e músculos, causando deformidades musculares. Esses sangramentos também são capazes de obstruir as vias respiratórias, dificultar a respiração e, em casos de traumas na cabeça, causar danos cerebrais fatais.
+          <BR><br></p>
+          <h1 class="collection-title" style="font-size: 2em; color: darkred;">Sintomas da Hemofilia</h1>
+          <br>
+          <ul class="collection-list">
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title" >Equimoses</h2>
+                <p class="card-text">Sintoma comum: Marcas roxas e lesões pelo corpo que aparecem sem motivo e que podem ter sido causadas por um sangramento debaixo da pele</p>
+                <div class="has-bg-image" style="background-image: url('1.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">Sangramentos em Músculos e Articulações</h2>
+                <p class="card-text">Sintoma comum: Dor forte e restrição de movimento em lugares como os joelhos e tornozelos, por conta de sangramentos internos, podendo até ter deficiências no sistema ósseo e dificuldade em se movimentar..</p>
+                <div class="has-bg-image" style="background-image: url('2.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">Sangramentos Espontâneos</h2>
+                <p class="card-text">Sintoma comum: Sangramentos que surgem sem nenhum trauma ou razão aparente; cortes que levam muito tempo para parar de sangrar. Em geral, ocorrem hemorragias nas cavidades da pele.</p>
+                <div class="has-bg-image" style="background-image: url('3.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">Sangramentos nas Mucosas</h2>
+                <p class="card-text">Sintoma comum: Sangramentos frequentes nas mucosas, como o nariz e a gengiva</p>
+                <div class="has-bg-image" style="background-image: url('https://i0.wp.com/g7ma.com/wp-content/uploads/2018/07/HEMOFILIA.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">Dor e Restrição de Movimento</h2>
+                <p class="card-text" >Sintoma comum: Dor forte e restrição de movimento em lugares como os joelhos e tornozelos, por conta de sangramentos internos</p>
+                <div class="has-bg-image" style="background-image: url('teste5.jpg')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+
+
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <div class="content">
+                  <p class="card-subtitle">Como é feito o</p>
+                  <h2 class="h2 card-title">Diagnóstico</h2>
+                  <p class="card-text" style="font-size: 20px;">O diagnóstico da hemofilia geralmente envolve a análise de uma amostra de sangue e a investigação do histórico familiar. Inicialmente, o médico pode suspeitar da doença com base nos sintomas apresentados pelo paciente, como sangramentos prolongados após pequenos cortes ou hematomas frequentes sem causa aparente. Em mulheres grávidas, podem ser realizados exames como Biópsia de Vilo Corial (BVC) e amniocentese, além de testes genéticos após o nascimento da criança.</p>
+                  <p class="card-text" style="font-size: 20px;">Para confirmar o diagnóstico, são realizados exames de sangue específicos para medir os níveis de fatores de coagulação, como o fator VIII na hemofilia A e o fator IX na hemofilia B. Além disso, podem ser realizados testes genéticos para identificar mutações nos genes responsáveis pela produção desses fatores de coagulação.
+</p>
+                  <a href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_hemofilia_2ed.pdf" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+               
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+                 <div class="has-bg-image" style="background-image: url('diaag.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section id="tratamento">
+        <div class="container">
+
+          <h2 class="h2-large section-title">Como é realizado o tratamento?</h2>
+         
+          <br><br>
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="doacao-de-sangue.png" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Não há cura, mas tem Tratamento!</h3>
+
+                <p class="card-text">
+                  A hemofilia é uma condição genética que não tem cura, necessitando de tratamento contínuo para controle dos sintomas. Os pacientes dependem de terapias para substituir os fatores de coagulação deficientes e prevenir sangramentos.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="arteria.png" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Profilaxia Primária</h3>
+
+                <p class="card-text">
+                  Realizar o tratamento contra os sangramentos precocemente é essencial para minimizar as sequelas. Atualmente,  uma das abordagens é a <b>profilaxia primária</b>, que consiste na infusão do fator anti-hemofílico duas a três vezes semanais, iniciando-se após o primeiro episódio hemorrágico, isso é feito para prevenir futuras hemorragias e proteger as articulações contra lesões. Em casos de sequelas articulares estabelecidas, pode-se recorrer a medidas profiláticas secundária ou terciária, a fim de melhorar a condição do portador e prevenir próximos sangramentos.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/5219/5219382.png" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Remédios</h3>
+
+                <p class="card-text">
+                  Um dos tratamentos da hemofilia consiste na reposição justamente dos fatores anti-hemofílicos, os pacientes com hemofilia A recebem fator VIII, enquanto aqueles com hemofilia B recebem fator IX. Essas medicações são distribuídas pelo Ministério da Saúde de forma gratuita nos hemocentros . 
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFER
+      -->
+      <div class="grafico"> <div id="chart-container">
+        <canvas id="hemophiliaChart"></canvas>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="grafico.js"></script></div>
+      <section class="section offer" id="offer" aria-label="offer" data-section>
+        <div class="container">
+
+          <figure class="offer-banner">
+            <img src="Post instagram dia do Hemofílico moderno vermelho e branco (1).png" width="305" height="408" loading="lazy" alt="offer products"
+              class="w-100">
+
+            <img src="sangue1.png"450" height="625" loading="lazy" alt="offer products"
+              class="w-100">
+          </figure>
+
+          <div class="offer-content">
+
+            <p class="offer-subtitle">
+              <span class="span">Será que realmente você entendeu? </span>
+
+              <span class="badge" aria-label="20% off">Hemofilia</span>
+            </p>
+
+            <h2 class="h2-large section-title">Questionário</h2>
+
+            <p class="section-text">
+              Teste seus conhecimentos sobre hemofilia! Participe do nosso quiz e aprenda mais sobre essa condição genética rara que afeta a coagulação do sangue. 
+            </p>
+
+            <div class="countdown">
+
+              <span class="time" aria-label="days">04</span>
+              <span class="time" aria-label="hours">06</span>
+              <span class="time" aria-label="minutes">2024</span>
+
+            </div>
+
+            <a href="https://viviii4.github.io/questionario/" class="btn btn-primary">Quiz</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Quem nós somos</h2>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="leh.jpeg" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Odontologia</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Letícia Silva Cardoso</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="duda.jpeg" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Odontologia</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Maria Eduarda Lira Nelo De Oliveira</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="vitoria.png" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Odontologia</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Maria das Vitórias da Costa Araújo</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="ais.jpeg" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Biomedicina</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Aislany Gabrielly Souza dos Santos</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="jes.jpeg" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Biomedicina</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Jéssica Darlane</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <!-- Novo quadro -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="mirela.png" width="540" height="720" loading="lazy" class="img-cover">
+                  <span class="badge" aria-label="20% off">Biomedicina</span>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Fernanda Mirella de Oliveira Félix</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+         
+
+      </section>
+      <div class="reference">
+        <h2>Artigo de Site:</h2>
+        <div class="reference">
+          Diagnósticos do Brasil. <i>Hemofilia: diagnóstico, tratamento e sintomas.</i> Diagnósticos do Brasil. Disponível em: <a href="https://www.diagnosticosdobrasil.com.br/artigo/hemofilia-diagnostico-tratamento-e-sintomas" target="_blank">https://www.diagnosticosdobrasil.com.br/artigo/hemofilia-diagnostico-tratamento-e-sintomas</a>. Acesso em: 26 de maio de 2024.
+        </div>
+
+        <div class="reference">
+          <div>
+            Varella, Drauzio. <i>Hemofilia.</i> Drauzio Varella. Disponível em: <a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/hemofilia/" target="_blank">https://drauziovarella.uol.com.br/doencas-e-sintomas/hemofilia/</a>. Acesso em: 26 de maio de 2024.
+          </div>
+        </div>
+
+        <div class="reference">
+          <div>
+            Pfizer. <i>Hemofilia.</i> Pfizer. Disponível em: <a href="https://www.pfizer.com.br/sua-saude/doencas-raras/hemofilia" target="_blank">https://www.pfizer.com.br/sua-saude/doencas-raras/hemofilia</a>. Acesso em: 26 de maio de 2024.
+          </div>
+        </div>
+        <h2>Artigo Científico:</h2>
+        <div class="reference">
+    
+          <div>
+            Pio, Simone Ferreira; Oliveira, Guilherme Corrêa de; Rezende, Suely Meireles. As bases moleculares da hemofilia A. Revista da Associação Médica Brasileira, 55(2), p. 213-219, 2009.
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <img class="unp" src="unp-removebg-preview.png" alt="UNP Logo">
+    <div class="footer-content">
+      
+      <ul class="team-list">
+        <li class="team-member">Letícia Silva Cardoso - Odontologia</li>
+        <li class="team-member">Maria Eduarda Lira Nelo De Oliveira - Odontologia</li>
+         <li class="team-member">Maria das Vitórias da Costa Araújo - Odontologia</li>
+        <li class="team-member">Aislany Gabrielly Souza dos Santos - Biomedicina</li>
+        <li class="team-member">Jéssica Darlane - Biomedicina</li>
+        <li class="team-member">Fernanda Mirella de Oliveira Félix - Biomedicina</li>
+      </ul><br><br>
+    </div>
+    </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
