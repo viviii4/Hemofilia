@@ -50,7 +50,7 @@ const config = {
         plugins: {
             title: {
                 display: true,
-                text: 'Incidência de Hemofilia Tipo A no Brasil (2019-2023)',
+                text: 'Incidência de Hemofilia no Brasil (2019-2023)',
                 font: {
                     size: 20 // Tamanho da fonte do título do gráfico
                 }
